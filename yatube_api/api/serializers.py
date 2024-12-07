@@ -11,7 +11,7 @@ class GroupSerializer(serializers.ModelSerializer):
 
 class PostSerializer(serializers.ModelSerializer):
     author = serializers.StringRelatedField(read_only=True)
-    
+
     class Meta:
         model = Post
         fields = '__all__'
